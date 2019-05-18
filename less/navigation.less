@@ -2,9 +2,8 @@
 
 body{
 	h1{
-    display: flex;
-    justify-content: center;
-    
+    .justify-content();
+   
     font-size: 5rem;
     margin-bottom: 12px;
     margin-top: 12px;
@@ -12,17 +11,17 @@ body{
 	}
 	nav{
 		display: flex;
-    	justify-content: center;
-    	font-size: 1.3rem;
-    	text-decoration: none;
-    	margin-bottom: 10px
+    	justify-content: space-between;
+    	width: 35%;
+    	margin-left: 472px;
 
 		a{
-			display: flex;
-		justify-content: center;
-		
-     	  font-size: 1.6rem;
-     	  text-decoration: none;
-		}
+		    
+    		justify-content: center;
+    		font-size: 1.3rem;
+    		text-decoration: none;
+    		margin-bottom: 10px;
+    		.nav-color();
+    	}
 	}
 }
