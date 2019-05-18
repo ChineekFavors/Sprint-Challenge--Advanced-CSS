@@ -7,3 +7,15 @@
 	display: flex;
     justify-content: center;
 }
+
+//parametric mixin
+
+.button(@font-size, @border-radius){
+	font-size: @font-size;
+	border-radius: @border-radius;
+}
+
+//@ mobile
+
+@phone: ~"(max-width: 500px)";
+

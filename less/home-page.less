@@ -25,6 +25,16 @@
       border-radius: 20px;
       height: 100%;
     }
+
+     @media @phone{
+     img[class*="blast"]{width: 100%;}
+     img[class*="sky"]{ visibility: hidden;}
+     img[class*="space-walk"]{ visibility: hidden;}
+     img[class*="launch"]{ visibility: hidden;}
+
+
+
+     }
   }
 
   .visit-planets {
@@ -57,7 +67,16 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn button {
+        background-color: rgb(35, 41,59);
+        color: white;
+        .button(1.8rem, 6px);
+
+        &:hover{
+          color: rgb(35, 41,59);
+          background-color: white;
+
+        }
       }
     }
 
@@ -69,7 +88,12 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @phone{
+          width: 100%;
+        }  
       }
+     
     }
   }
 }// home
